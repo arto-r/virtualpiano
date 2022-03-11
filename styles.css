@@ -1,0 +1,52 @@
+body{
+    background-color: #444;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}div{
+    display:inline;
+    padding:0px;
+    float:left;
+}.big{
+    background-color: white;
+    height: 120px;
+}
+.cf{
+    width:24px;
+}.small{
+    background-color: white;
+    height: 50px;
+    width:6px;
+    margin-top: 70px;
+}.right{
+    border-right: 1px solid #777;
+}.left{
+    border-left: 1px solid #777;
+}.eb{
+    width:24px;
+}
+.dga{
+    width:19px;
+}#piano{
+    margin-left:65px;
+    position:relative;
+}.black{
+    position:absolute;
+    top:0;
+    left:0;
+    height:70px;
+    width:14px;
+    z-index:10;
+    background-color:black;
+}p{
+    display: inline;
+    position:absolute;
+    top:10px;
+    z-index:15;
+    visibility: hidden;
+}.white{
+    color:white;
+    top:-10px;
+}button{
+    border-radius: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border:0px;
+}
