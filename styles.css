@@ -49,4 +49,34 @@ body{
     border-radius: 0px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border:0px;
+    width:70px;
+    height:30px;
+    margin-top:10px;
+}#mentry{
+    width:37px;
+    height:28px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius:0%;
+    border:0px;
+}button:disabled{
+    color:black;
+}#plus, #minus{
+    width:33px;
+}.instrum-content{
+    position: absolute;
+    display:none;
+    z-index:1;
+}.instrum:hover .instrum-content{
+    display: block;
+}.btn{
+    float:none;
+    display:block;
+    margin:0;
+    width:80px;
+}.instrum{
+    margin-right:5px;
+}.dropbtn{
+    width:80px;
+}button:hover{
+    background-color: #bebebe;
 }
