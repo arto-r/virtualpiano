@@ -2,12 +2,12 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles.css">
-        <title>Arto's Piano</title>
+        <title>Virtual Piano</title>
         <link rel="icon" type="image/x-icon" href="pianoico1.png">
         <script src="scripts.js"></script>
     </head>
-    <body onkeydown="play(m.get(event.key))">
-        <h1 style="color:white;text-align: center;">Arto's Piano</h1>
+    <body onkeypress="play(m.get(event.key))">
+        <h1 style="color:white;text-align: center;">Virtual Piano</h1>
         <div id="piano">
             <div id='c2' class="big cf left" onclick="play('c2')"></div>
             <div id='db2' class="black" onclick="play('db2')" style="left:25px;"></div>
@@ -136,7 +136,7 @@
             <p style="left:692px;">b</p>
             <p style="left:724px;">n</p>
             <p style="left:756px;">m</p>
-            <p style="left:792px;">,</p>
+            <p style="left:790px;">,</p>
             <p style="left:824px;">.</p>
             <p style="left:855px;">/</p>
 
@@ -157,6 +157,18 @@
             <p class="white" style="left:875px;">'</p>
 
             <button id="key" onclick='keyAssist()'>Key Assist</button>
+            <button id="minus" onclick="plmi('-');">-</button>
+            <input id="mentry" type="number" value="120" max="240" min="30">
+            <button id="plus" onclick="plmi('+');">+</button>
+            <button id="metro" onclick='start()'>Start</button>
+            <button id="stop" onclick='stop()'>Stop</button>
+            <div class="instrum">
+                <button class="dropbtn">Instruments</button>
+                <div class="instrum-content">
+                  <button class="btn" onclick="sw(1)">Piano</button>
+                  <button class="btn" onclick="sw(0)">Clarinet</button>
+                </div>
+              </div> 
             <audio id="audio0" src="c4.mp3"></audio>
             <audio id="audio1" src="c4.mp3"></audio>
             <audio id="audio2" src="c4.mp3"></audio>
