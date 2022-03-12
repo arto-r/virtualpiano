@@ -85,8 +85,6 @@ function delay(time) {
     metf=true;
     metroNome();
 }function stop(){
-    document.getElementById('stop').style.backgroundColor="#bebebe";
-    delay(100).then(() => {document.getElementById('stop').style.backgroundColor="#efefef";})
     metf=false;
     document.getElementById('metro').disabled=false;
     metroNome();
@@ -119,7 +117,3 @@ function plmi(a){
         }
     }
 }
-document.addEventListener('keypress', (event) => {
-    var note=m.get(event.key);
-    play(note);
-}, true);
