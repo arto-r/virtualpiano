@@ -1,5 +1,8 @@
 var a=1;
 var tff=false;
+var metf=false;
+var picl=true;
+met=new Audio(src="metronome.mp3");
 const m = new Map([
     ['q','c3'],
     ['2','db3'],
@@ -39,19 +42,15 @@ const m = new Map([
 ])
 function delay(time) {
     return new Promise(resolve => setTimeout(resolve, time));
-  }
-function play(id){
-    tf=false;
+}function sw(a){
+    if(a==1)picl=true;
+    else picl=false;
+}function play(id){
     var b=document.getElementById("audio"+a)
-    b.src=id+".mp3";
+    if(picl)b.src=id+".mp3";
+    else b.src=id+"c.mp3";
     b.currentTime=0;
     b.play();
-    function inter(){
-        if(b.currentTime>0.08){
-			b.pause();
-			}
-    }
-    int=setInterval(inter(),10);
     a++;
     a%=10;
     var b=document.getElementById(id).style.backgroundColor;
@@ -82,8 +81,45 @@ function play(id){
         tff=false;
         document.getElementById("key").style.backgroundColor="#efefef"
     }
+}function start(){
+    metf=true;
+    metroNome();
+}function stop(){
+    document.getElementById('stop').style.backgroundColor="#bebebe";
+    delay(100).then(() => {document.getElementById('stop').style.backgroundColor="#efefef";})
+    metf=false;
+    document.getElementById('metro').disabled=false;
+    metroNome();
+}
+function metroNome(){
+    if(metf){
+        document.getElementById('metro').disabled=true;
+        document.getElementById('metro').style.backgroundColor="#bebebe";
+        delay(100).then(() => {document.getElementById('metro').style.backgroundColor="#efefef";})
+        met.play();
+        bpm=60000/document.getElementById('mentry').value-13;
+        setTimeout("metroNome()",bpm);
+    }else{
+        met.pause();
+        met.currentTime=0;
+    }
+}
+function plmi(a){
+    if(a=='+'){
+        if(document.getElementById('mentry').value+1>document.getElementById('mentry').max){
+            return 0;
+        }else{
+            document.getElementById('mentry').value++;
+        }
+    }else{
+        if(document.getElementById('mentry').value-1<document.getElementById('mentry').min){
+            return 0;
+        }else{
+            document.getElementById('mentry').value--;
+        }
+    }
 }
 document.addEventListener('keypress', (event) => {
     var note=m.get(event.key);
     play(note);
-}, false);
+}, true);
