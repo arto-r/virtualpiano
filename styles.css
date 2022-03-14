@@ -35,15 +35,15 @@ body{
     top:-10px;
 }button{
     border-radius: 0px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:inherit;
     border:0px;
     width:70px;
-    height:30px;
+    height:35px;
     margin-top:10px;
 }#mentry{
     width:37px;
-    height:28px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height:33px;
+    font-family: inherit;
     border-radius:0%;
     border:0px;
 }button:disabled{
