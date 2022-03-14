@@ -1,6 +1,8 @@
 body{
     background-color: #444;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left:70px;
+    padding-right:70px;
 }div{
     display:inline;
     padding:0px;
@@ -8,26 +10,12 @@ body{
 }.big{
     background-color: white;
     height: 120px;
-}
-.cf{
-    width:24px;
-}.small{
-    background-color: white;
-    height: 50px;
-    width:6px;
-    margin-top: 70px;
-}.right{
-    border-right: 1px solid #777;
-}.left{
-    border-left: 1px solid #777;
-}.eb{
-    width:24px;
-}
-.dga{
-    width:19px;
+    width:30px;
+    border-left:1px solid #777;
+    border-right:1px solid #777;
 }#piano{
-    margin-left:65px;
     position:relative;
+    display: block;
 }.black{
     position:absolute;
     top:0;
@@ -62,18 +50,21 @@ body{
     color:black;
 }#plus, #minus{
     width:33px;
-}.instrum-content{
+}.instrum-content, .sounds-content{
     position: absolute;
     display:none;
     z-index:1;
 }.instrum:hover .instrum-content{
     display: block;
-}.btn{
+}.sounds:hover .sounds-content{
+    display:block;
+}
+.btn{
     float:none;
     display:block;
     margin:0;
     width:80px;
-}.instrum{
+}.instrum, .sounds{
     margin-right:5px;
 }.dropbtn{
     width:80px;
