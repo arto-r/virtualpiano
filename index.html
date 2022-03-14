@@ -7,179 +7,129 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="scripts.js"></script>
     </head>
-    <body onkeypress="play(m.get(event.key))">
+    <body onkeypress="play(m.get(event.key))" id="body">
         <h1 style="color:white;text-align: center;">Virtual Piano</h1>
         <div id="piano">
-            <div id='c2' class="big cf left" onclick="play('c2')"></div>
+            <div id='c2' class="big" onclick="play('c2')"></div>
+            <div id='d2' class="big" onclick="play('d2')"></div>
+            <div id='e2' class="big" onclick="play('e2')"></div>
+            <div id='f2' class="big" onclick="play('f2')"></div>
+            <div id='g2' class="big" onclick="play('g2')"></div>
+            <div id='a2' class="big" onclick="play('a2')"></div>
+            <div id='b2' class="big" onclick="play('b2')"></div>
+            <div id='c3' class="big" onclick="play('c3')"></div>
+            <div id='d3' class="big" onclick="play('d3')"></div>
+            <div id='e3' class="big" onclick="play('e3')"></div>
+            <div id='f3' class="big" onclick="play('f3')"></div>
+            <div id='g3' class="big" onclick="play('g3')"></div>
+            <div id='a3' class="big" onclick="play('a3')"></div>
+            <div id='b3' class="big" onclick="play('b3')"></div>
+            <div id='c4' class="big" onclick="play('c4')"></div>
+            <div id='d4' class="big" onclick="play('d4')"></div>
+            <div id='e4' class="big" onclick="play('e4')"></div>
+            <div id='f4' class="big" onclick="play('f4')"></div>
+            <div id='g4' class="big" onclick="play('g4')"></div>
+            <div id='a4' class="big" onclick="play('a4')"></div>
+            <div id='b4' class="big" onclick="play('b4')"></div>
+            <div id='c5' class="big" onclick="play('c5')"></div>
+            <div id='d5' class="big" onclick="play('d5')"></div>
+            <div id='e5' class="big" onclick="play('e5')"></div>
+            <div id='f5' class="big" onclick="play('f5')"></div>
+            <div id='g5' class="big" onclick="play('g5')"></div>
+            <div id='a5' class="big" onclick="play('a5')"></div>
+            <div id='b5' class="big" onclick="play('b5')"></div>
+            <div id='c6' class="big" onclick="play('c6')"></div>
+            <div id='d6' class="big" onclick="play('d6')"></div>
+            <div id='e6' class="big" onclick="play('e6')"></div>
+            <div id='f6' class="big" onclick="play('f6')"></div>
+            <div id='g6' class="big" onclick="play('g6')"></div>
+            <div id='a6' class="big" onclick="play('a6')"></div>
+            <div id='b6' class="big" onclick="play('b6')"></div>
+
             <div id='db2' class="black" onclick="play('db2')" style="left:25px;"></div>
-            <div id='c21' class="small right" onclick="play('c2')"></div>
-            <div id='d20' class="small left" onclick="play('d2')"></div>
-            <div id='d2' class="big dga" onclick="play('d2')"></div>
-            <div id='d21' class="small right" onclick="play('d2')"></div>
-            <div id='eb2' class="black" onclick="play('eb2')" style="left:58px;"></div>
-            <div id='e2' class="small left" onclick="play('e2')"></div>
-            <div id='e21' class="big eb right" onclick="play('e2')"></div>
-            <div id='f2' class="big cf left" onclick="play('f2')"></div>
-            <div id='f21' class="small right" onclick="play('f2')"></div>
-            <div id='gb2' class="black" onclick="play('gb2')" style="left:122px;"></div>
-            <div id='g2' class="small left" onclick="play('g2')"></div>
-            <div id='g21' class="big dga" onclick="play('g2')"></div>
-            <div id='g20' class="small right" onclick="play('g2')"></div>
-            <div id='ab2' class="black" onclick="play('ab2')" style="left:155px;"></div>
-            <div id='a2' class="small left" onclick="play('a2')"></div>
-            <div id='a21' class="big dga" onclick="play('a2')"></div>
-            <div id='a20' class="small right" onclick="play('a2')"></div>
-            <div id='bb2' class="black" onclick="play('bb2')" style="left:188px;"></div>
-            <div id='b2' class="small left" onclick="play('b2')"></div>
-            <div id='b21' class="big eb right" onclick="play('b2')"></div>
-            <div id='c3' class="big cf left" onclick="play('c3')"></div>
-            <div id='c31' class="small right" onclick="play('c3')"></div>
-            <div id='db3' class="black" onclick="play('db3')" style="left:252px;"></div>
-            <div id='d3' class="small left" onclick="play('d3')"></div>
-            <div id='d31' class="big dga" onclick="play('d3')"></div>
-            <div id='d30' class="small right" onclick="play('d3')"></div>
-            <div id='eb3' class="black" onclick="play('eb3')" style="left:285px;"></div>
-            <div id='e3' class="small left" onclick="play('e3')"></div>
-            <div id='e31' class="big eb right" onclick="play('e3')"></div>
-            <div id='f3' class="big cf left" onclick="play('f3')"></div>
-            <div id='f31' class="small right" onclick="play('f3')"></div>
-            <div id='gb3' class="black" onclick="play('gb3')" style="left:349px;"></div>
-            <div id='g3' class="small left" onclick="play('g3')"></div>
-            <div id='g31' class="big dga" onclick="play('g3')"></div>
-            <div id='g30' class="small right" onclick="play('g3')"></div>
-            <div id='ab3' class="black" onclick="play('ab3')" style="left:382px;"></div>
-            <div id='a3' class="small left" onclick="play('a3')"></div>
-            <div id='a31' class="big dga" onclick="play('a3')"></div>
-            <div id='a30' class="small right" onclick="play('a3')"></div>
-            <div id='bb3' class="black" onclick="play('bb3')" style="left:415px;"></div>
-            <div id='b3' class="small left" onclick="play('b3')"></div>
-            <div id='b31' class="big eb right" onclick="play('b3')"></div>
-            <div id='c4' class="big cf left" onclick="play('c4')"></div>
-            <div id='c41' class="small right" onclick="play('c4')"></div>
-            <div id='db4' class="black" onclick="play('db4')" style="left:479px;"></div>
-            <div id='d4' class="small left" onclick="play('d4')"></div>
-            <div id='d41' class="big dga" onclick="play('d4')"></div>
-            <div id='d40' class="small right" onclick="play('d4')"></div>
-            <div id='eb4' class="black" onclick="play('eb4')" style="left:512px;"></div>
-            <div id='e4' class="small left" onclick="play('e4')"></div>
-            <div id='e41' class="big eb right" onclick="play('e4')"></div>
-            <div id='f4' class="big cf left" onclick="play('f4')"></div>
-            <div id='f41' class="small right" onclick="play('f4')"></div>
-            <div id='gb4' class="black" onclick="play('gb4')" style="left:576px;"></div>
-            <div id='g4' class="small left" onclick="play('g4')"></div>
-            <div id='g41' class="big dga" onclick="play('g4')"></div>
-            <div id='g40' class="small right" onclick="play('g4')"></div>
-            <div id='ab4' class="black" onclick="play('ab4')" style="left:609px;"></div>
-            <div id='a4' class="small left"onclick="play('a4')"></div>
-            <div id='a41' class="big dga" onclick="play('a4')"></div>
-            <div id='a40' class="small right" onclick="play('a4')"></div>
-            <div id='bb4' class="black" onclick="play('bb4')" style="left:642px;"></div>
-            <div id='b4' class="small left" onclick="play('b4')"></div>
-            <div id='b41' class="big eb right" onclick="play('b4')"></div>
-            <div id='c5' class="big cf left" onclick="play('c5')"></div>
-            <div id='c51' class="small right" onclick="play('c5')"></div>
-            <div id='db5' class="black" onclick="play('db5')" style="left:706px;"></div>
-            <div id='d5' class="small left" onclick="play('d5')"></div>
-            <div id='d51' class="big dga" onclick="play('d5')"></div>
-            <div id='d50' class="small right" onclick="play('d5')"></div>
-            <div id='eb5' class="black" onclick="play('eb5')" style="left:739px;"></div>
-            <div id='e5' class="small left" onclick="play('e5')"></div>
-            <div id='e51' class="big eb right" onclick="play('e5')"></div>
-            <div id='f5' class="big cf left" onclick="play('f5')"></div>
-            <div id='f51' class="small right" onclick="play('f5')"></div>
-            <div id='gb5' class="black" onclick="play('gb5')" style="left:803px;"></div>
-            <div id='g5' class="small left" onclick="play('g5')"></div>
-            <div id='g51' class="big dga" onclick="play('g5')"></div>
-            <div id='g50' class="small right" onclick="play('g5')"></div>
-            <div id='ab5' class="black" onclick="play('ab5')" style="left:836px;"></div>
-            <div id='a5' class="small left" onclick="play('a5')"></div>
-            <div id='a51' class="big dga" onclick="play('a5')"></div>
-            <div id='a50' class="small right" onclick="play('a5')"></div>
-            <div id='bb5' class="black" onclick="play('bb5')" style="left:869px;"></div>
-            <div id='b5' class="small left" onclick="play('b5')"></div>
-            <div id='b51' class="big eb right" onclick="play('b5')"></div>
-            <div id='c6' class="big cf left" onclick="play('c6')"></div>
-            <div id='c61' class="small right" onclick="play('c6')"></div>
-            <div id='db6' class="black" onclick="play('db6')" style="left:933px;"></div>
-            <div id='d6' class="small left" onclick="play('d6')"></div>
-            <div id='d61' class="big dga" onclick="play('d6')"></div>
-            <div id='d60' class="small right" onclick="play('d6')"></div>
-            <div id='eb6' class="black" onclick="play('eb6')" style="left:966px;"></div>
-            <div id='e6' class="small left" onclick="play('e6')"></div>
-            <div id='e61' class="big eb right" onclick="play('e6')"></div>
-            <div id='f6' class="big cf left" onclick="play('f6')"></div>
-            <div id='f61' class="small right" onclick="play('f6')"></div>
-            <div id='gb6' class="black" onclick="play('gb6')" style="left:1030px;"></div>
-            <div id='g6' class="small left" onclick="play('g6')"></div>
-            <div id='g61' class="big dga" onclick="play('g6')"></div>
-            <div id='g60' class="small right" onclick="play('g6')"></div>
-            <div id='ab6' class="black" onclick="play('ab6')" style="left:1063px;"></div>
-            <div id='a6' class="small left" onclick="play('a6')"></div>
-            <div id='a61' class="big dga" onclick="play('a6')"></div>
-            <div id='a60' class="small right" onclick="play('a6')"></div>
-            <div id='bb6' class="black" onclick="play('bb6')" style="left:1096px;"></div>
-            <div id='b6' class="small left" onclick="play('b6')"></div>
-            <div id='b61' class="big eb right" onclick="play('b6')"></div>
-            <p style="left:238px;">q</p>
-            <p style="left:270px;">w</p>
-            <p style="left:305px;">e</p>
-            <p style="left:336px;">r</p>
-            <p style="left:369px;">t</p>
-            <p style="left:401px;">y</p>
-            <p style="left:434px;">u</p>
-            <p style="left:466px;">i</p>
-            <p style="left:498px;">o</p>
-            <p style="left:532px;">p</p>
-            <p style="left:561px;">z</p>
-            <p style="left:595px;">x</p>
-            <p style="left:628px;">c</p>
-            <p style="left:662px;">v</p>
-            <p style="left:692px;">b</p>
-            <p style="left:724px;">n</p>
-            <p style="left:756px;">m</p>
-            <p style="left:790px;">,</p>
-            <p style="left:824px;">.</p>
-            <p style="left:855px;">/</p>
+            <div id='eb2' class="black" onclick="play('eb2')" style="left:57px;"></div>
+            <div id='gb' class="black" onclick="play('gb2')" style="left:121px;"></div>
+            <div id='ab2' class="black" onclick="play('ab2')" style="left:153px;"></div>
+            <div id='bb2' class="black" onclick="play('bb2')" style="left:185px;"></div>
+            <div id='db3' class="black" onclick="play('db3')" style="left:249px;"></div>
+            <div id='eb3' class="black" onclick="play('eb3')" style="left:281px;"></div>
+            <div id='gb3' class="black" onclick="play('gb3')" style="left:345px;"></div>
+            <div id='ab3' class="black" onclick="play('ab3')" style="left:377px;"></div>
+            <div id='bb3' class="black" onclick="play('bb3')" style="left:409px;"></div>
+            <div id='db4' class="black" onclick="play('db4')" style="left:473px;"></div>
+            <div id='eb4' class="black" onclick="play('eb4')" style="left:505px;"></div>
+            <div id='gb4' class="black" onclick="play('gb4')" style="left:569px;"></div>
+            <div id='ab4' class="black" onclick="play('ab4')" style="left:601px;"></div>
+            <div id='bb4' class="black" onclick="play('bb4')" style="left:633px;"></div>
+            <div id='db5' class="black" onclick="play('db5')" style="left:697px;"></div>
+            <div id='eb5' class="black" onclick="play('eb5')" style="left:729px;"></div>
+            <div id='gb5' class="black" onclick="play('gb5')" style="left:793px;"></div>
+            <div id='ab5' class="black" onclick="play('ab5')" style="left:825px;"></div>
+            <div id='bb5' class="black" onclick="play('bb5')" style="left:857px;"></div>
+            <div id='db6' class="black" onclick="play('db6')" style="left:921px;"></div>
+            <div id='eb6' class="black" onclick="play('eb6')" style="left:953px;"></div>
+            <div id='gb6' class="black" onclick="play('gb6')" style="left:1017px;"></div>
+            <div id='ab6' class="black" onclick="play('ab6')" style="left:1049px;"></div>
+            <div id='bb6' class="black" onclick="play('bb6')" style="left:1081px;"></div>
 
-            <p class="white" style="left:255px;">2</p>
-            <p class="white" style="left:288px;">3</p>
-            <p class="white" style="left:352px;">5</p>
-            <p class="white" style="left:385px;">6</p>
-            <p class="white" style="left:418px;">7</p>
-            <p class="white" style="left:481px;">9</p>
-            <p class="white" style="left:515px;">0</p>
-            <p class="white" style="left:580px;">s</p>
-            <p class="white" style="left:611px;">d</p>
-            <p class="white" style="left:646px;">f</p>
-            <p class="white" style="left:709px;">h</p>
-            <p class="white" style="left:743px;">j</p>
-            <p class="white" style="left:808px;">l</p>
-            <p class="white" style="left:841px;">;</p>
-            <p class="white" style="left:875px;">'</p>
+            <p style="left:236px;">q</p>
+            <p style="left:267px;">w</p>
+            <p style="left:302px;">e</p>
+            <p style="left:332px;">r</p>
+            <p style="left:365px;">t</p>
+            <p style="left:396px;">y</p>
+            <p style="left:429px;">u</p>
+            <p style="left:461px;">i</p>
+            <p style="left:493px;">o</p>
+            <p style="left:527px;">p</p>
+            <p style="left:555px;">z</p>
+            <p style="left:589px;">x</p>
+            <p style="left:622px;">c</p>
+            <p style="left:655px;">v</p>
+            <p style="left:685px;">b</p>
+            <p style="left:715px;">n</p>
+            <p style="left:747px;">m</p>
+            <p style="left:781px;">,</p>
+            <p style="left:814px;">.</p>
+            <p style="left:845px;">/</p>
 
-            <button id="key" onclick='keyAssist()'>Key Assist</button>
-            <button id="minus" onclick="plmi('-');">-</button>
-            <input id="mentry" type="number" value="120" max="240" min="30">
-            <button id="plus" onclick="plmi('+');">+</button>
-            <button id="metro" onclick='start()'>Start</button>
-            <button id="stop" onclick='stop()'>Stop</button>
-            <div class="instrum">
-                <button class="dropbtn">Instruments</button>
-                <div class="instrum-content">
-                  <button class="btn" onclick="sw(1)">Piano</button>
-                  <button class="btn" onclick="sw(0)">Clarinet</button>
-                </div>
-              </div> 
-            <audio id="audio0" src="c4.mp3"></audio>
-            <audio id="audio1" src="c4.mp3"></audio>
-            <audio id="audio2" src="c4.mp3"></audio>
-            <audio id="audio3" src="c4.mp3"></audio>
-            <audio id="audio4" src="c4.mp3"></audio>
-            <audio id="audio5" src="c4.mp3"></audio>
-            <audio id="audio6" src="c4.mp3"></audio>
-            <audio id="audio7" src="c4.mp3"></audio>
-            <audio id="audio8" src="c4.mp3"></audio>
-            <audio id="audio9" src="c4.mp3"></audio>
+            <p class="white" style="left:252px;">2</p>
+            <p class="white" style="left:284px;">3</p>
+            <p class="white" style="left:348px;">5</p>
+            <p class="white" style="left:379px;">6</p>
+            <p class="white" style="left:412px;">7</p>
+            <p class="white" style="left:476px;">9</p>
+            <p class="white" style="left:508px;">0</p>
+            <p class="white" style="left:573px;">s</p>
+            <p class="white" style="left:604px;">d</p>
+            <p class="white" style="left:637px;">f</p>
+            <p class="white" style="left:700px;">h</p>
+            <p class="white" style="left:734px;">j</p>
+            <p class="white" style="left:798px;">l</p>
+            <p class="white" style="left:830px;">;</p>
+            <p class="white" style="left:863px;">'</p>
+        </div>
+        <button id="key" onclick='keyAssist()'>Key Assist</button>
+        <button id="minus" onclick="plmi('-');">-</button>
+        <input id="mentry" type="number" value="120" max="240" min="30">
+        <button id="plus" onclick="plmi('+');">+</button>
+        <button id="metro" onclick='start()'>Start</button>
+        <button id="stop" onclick='stop()'>Stop</button>
+        <div class="instrum">
+            <button class="dropbtn">Instruments</button>
+            <div class="instrum-content">
+              <button class="btn" onclick="sw(1)">Piano</button>
+              <button class="btn" onclick="sw(0)">Clarinet</button>
+              <button class="btn" onclick="sw(2)">Trumpet</button>
+            </div>
+        </div> 
+        <div class="sounds">
+            <button class="dropbtn" style="margin-left:0;">Sounds</button>
+            <div class="sounds-content">
+                <button class="btn" id="cuckoo" onclick="cu=new Audio('CUCKOO.wav');cu.play();">Cuckoo</button>
+                <button class="btn" id="scratch" onclick="cu=new Audio('scratch.mp3');cu.play();">Scratch</button>
+                <button class="btn" id="horse" onclick="cu=new Audio('horse.mp3');cu.play();">Horse</button>
+            </div>
         </div>
     </body>
 </html>
