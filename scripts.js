@@ -1,7 +1,7 @@
 var a=1;
 var tff=false;
 var metf=false;
-var picl=true;
+var pct=1;
 met=new Audio(src="metronome.mp3");
 const m = new Map([
     ['q','c3'],
@@ -43,33 +43,20 @@ const m = new Map([
 function delay(time) {
     return new Promise(resolve => setTimeout(resolve, time));
 }function sw(a){
-    if(a==1)picl=true;
-    else picl=false;
+    pct=a;
 }function play(id){
-    var b=document.getElementById("audio"+a)
-    if(picl)b.src=id+".mp3";
-    else b.src=id+"c.mp3";
+    var b=new Audio()
+    if(pct==1)b.src=id+".mp3";
+    else if(pct==0)b.src=id+"c.mp3";
+    else b.src=id+"t.mp3";
     b.currentTime=0;
     b.play();
-    a++;
-    a%=10;
     var b=document.getElementById(id).style.backgroundColor;
     console.log(b);
     document.getElementById(id).style.backgroundColor="#aaa";
-    try{document.getElementById(id+'1').style.backgroundColor="#aaa";}
-    catch(error){console.error(error);}
-    try{document.getElementById(id+'0').style.backgroundColor="#aaa";}
-    catch(error){console.error(error);}
     delay(100).then(() => {
-        if(document.getElementById(id).className=="black"){
-            document.getElementById(id).style.backgroundColor="#000";
-            document.getElementById(id+'1').style.backgroundColor="#000";
-            document.getElementById(id+'0').style.backgroundColor="#000";
-        }else{
-        document.getElementById(id).style.backgroundColor="#fff";
-        document.getElementById(id+'1').style.backgroundColor="#fff";
-        document.getElementById(id+'0').style.backgroundColor="#fff";}
-    })
+        if(document.getElementById(id).className=="black")document.getElementById(id).style.backgroundColor="#000";
+        else document.getElementById(id).style.backgroundColor="#fff";})
 }function keyAssist(){
     ps=document.getElementsByTagName('p')
     if(!tff){
@@ -93,7 +80,7 @@ function metroNome(){
     if(metf){
         document.getElementById('metro').disabled=true;
         document.getElementById('metro').style.backgroundColor="#bebebe";
-        delay(100).then(() => {document.getElementById('metro').style.backgroundColor="#efefef";})
+        delay(50).then(() => {document.getElementById('metro').style.backgroundColor="#efefef";})
         met.play();
         bpm=60000/document.getElementById('mentry').value-13;
         setTimeout("metroNome()",bpm);
