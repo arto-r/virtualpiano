@@ -47,8 +47,7 @@ function delay(time) {
 }function play(id){
     var b=new Audio()
     if(pct==1)b.src=id+".mp3";
-    else if(pct==0)b.src=id+"c.mp3";
-    else b.src=id+"t.mp3";
+    else b.src=id+"c.mp3";
     b.currentTime=0;
     b.play();
     var b=document.getElementById(id).style.backgroundColor;
@@ -103,4 +102,7 @@ function plmi(a){
             document.getElementById('mentry').value--;
         }
     }
+}function playsound(id){
+    document.getElementById("saudio").src=id+'.mp3';
+    document.getElementById("saudio").play();
 }
