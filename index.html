@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="scripts.js"></script>
     </head>
-    <body onkeypress="play(m.get(event.key))" id="body">
+    <body onkeypress="play(m.get(event.key.toLowerCase()))" id="body">
         <h1 style="color:white;text-align: center;">Virtual Piano</h1>
         <div id="piano">
             <div id='c2' class="big" onclick="play('c2')"></div>
@@ -125,9 +125,37 @@
         <div class="sounds">
             <button class="dropbtn" style="margin-left:0;">Sounds</button>
             <div class="sounds-content">
-                <button class="btn" id="cuckoo" onclick="cu=new Audio('CUCKOO.wav');cu.play();">Cuckoo</button>
-                <button class="btn" id="scratch" onclick="cu=new Audio('scratch.mp3');cu.play();">Scratch</button>
-                <button class="btn" id="horse" onclick="cu=new Audio('horse.mp3');cu.play();">Horse</button>
+                <button class="btn" onclick="playsound('ak47gunshot')">AK-47 Gunshot</button>
+                <button class="btn" onclick="playsound('aww')">Aww</button>
+                <button class="btn" onclick="playsound('bike-horn-soundbible')">Bike Horn</button>
+                <button class="btn" onclick="playsound('broken-glass-sound-effect-high-quality')">Broken Glass</button>
+                <button class="btn" onclick="playsound('camera_zLdd1zp')">Camera Shutter</button>
+                <button class="btn" onclick="playsound('censorbeep')">Censor Beep</button>
+                <button class="btn" onclick="playsound('cow-moo')">Cow Moo</button>
+                <button class="btn" onclick="playsound('CUCKOO')">Cuckoo</button>
+                <button class="btn" onclick="playsound('ding')">Ding</button>
+                <button class="btn" onclick="playsound('directedby')">Directed by Robert B Weide</button>
+                <button class="btn" onclick="playsound('airhorn')">DJ Airhorn</button> 
+                <button class="btn" onclick="playsound('doorbell')">Doorbell</button>                 
+                <button class="btn" onclick="playsound('error')">Error</button>
+                <button class="btn" onclick="playsound('fart')">Fart</button>
+                <button class="btn" onclick="playsound('horse')">Horse</button>
+                <button class="btn" onclick="playsound('gunshot-one')">Load and Gunshot Fire</button>
+                <button class="btn" onclick="playsound('mariojump')">Mario Jump</button>
+                <button class="btn" onclick="playsound('metalgear')">Metal Gear</button>
+                <button class="btn" onclick="playsound('mjackson')">Michael Jackson</button>
+                <button class="btn" onclick="playsound('oh_my')">Oh my</button>
+                <button class="btn" onclick="playsound('police-beep')">Police Radio Beep</button>
+                <button class="btn" onclick="playsound('rimshot')">Rimshot</button>
+                <button class="btn" onclick="playsound('scratch')">Scratch</button>
+                <button class="btn" onclick="playsound('record-scratch-2')">Scratch 2</button>
+                <button class="btn" onclick="playsound('siren')">Siren</button>
+                <button class="btn" onclick="playsound('spongebobsteelsting')">Sponge Bob Steel Sting</button>
+                <button class="btn" onclick="playsound('tacobell')">Taco Bell Bong</button>
+                <button class="btn" onclick="playsound('quadruplex-norm')">Train Horn</button>
+                <button class="btn" onclick="playsound('windows-10-error-sound')">Windows 10 Error</button>
+                <button class="btn" onclick="playsound('yay')">Yaaay</button>
+                <button class="btn" onclick="playsound('yee-haw')">Yee-Haw</button>
             </div>
         </div>
     </body>
